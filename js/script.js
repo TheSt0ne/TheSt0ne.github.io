@@ -7,7 +7,7 @@ const  newQuote = document.getElementById('new-quote');
 
 let apiQuotes=[];
 
-function newQuote(){
+function newQuotes(){
 				const quote=apiQuotes[Math.floor(Math.random()*apiQuotes.length)];
 				quoteAuthor.textContent=quote.author;
 				quoteText.textContent=quote.text;
@@ -17,7 +17,7 @@ async function quoteFetcher() {
 				try{
 								const response =await fetch(apiUrl);
 								apiQuotes = await response.json();
-								newQuote();
+								newQuotes();
 				} catch(error) {
 								alert(error)
 				}
