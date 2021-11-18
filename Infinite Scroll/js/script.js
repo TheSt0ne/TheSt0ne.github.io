@@ -4,7 +4,8 @@ const submit = document.getElementById('submit');
 const query =
 document.getElementById('query');
 
-//let Query= "drawing";
+//Add Query for different searches
+let Query;
 
 let ready=false;
 let imagesLoaded=0;
