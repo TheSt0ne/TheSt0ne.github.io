@@ -5,7 +5,7 @@ const query =
 document.getElementById('query');
 
 //Add Query for different searches
-let Query;
+//let Query;
 
 let ready=false;
 let imagesLoaded=0;
@@ -15,7 +15,6 @@ let photosArray = [];
 const apiKey = 'mJwhVMrCFlbZernDrcRVjT9Tr6BRGQfnWjh5hkgke6M';
 let count = 5;
 const apiUrl=`https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${count}`;
-//&query=${Query}`;
 
 function imageLoaded(){
 	imagesLoaded++;
