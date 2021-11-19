@@ -22,5 +22,6 @@ async function quoteFetcher() {
 								alert(error)
 				}
 }
+newQuote.addEventListener('click',newQuotes);
 
 quoteFetcher();
