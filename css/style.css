@@ -3,9 +3,11 @@
 	margin: 0;
 	padding: 0;
 }
+html{
+	scroll-behavior: smooth;
+}
 body{
 	font-family: aeriel;
-	scroll-behavior: smooth;
 }
 /*On Scrolled*/
 .toggleBackground{
@@ -122,20 +124,49 @@ nav{
 	font-family: "Bebas Neue",cursive;
 	font-size: 40px;
 	margin: 10px;
+	color: #1c1c1c;
 }
 .service-grid{
 	padding: 0 50px;
 	display: grid;
-	grid-gap:10px ;
+	grid-gap:20px ;
 	grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
 
 }
 .ser{
-	background: crimson;
+	background: #fff;
 	text-align: center;
 	height: 300px;
+	border:1px solid #dc143c;
+	box-shadow: 10px 5px 10px rgba(0,0,0,0.5);
+	border-radius: 5px;
 }
 .service-heading{
-	color: #fff;
+	color: #dc143c;
 	margin-top: 10px;
+}
+.service-image{
+	/*border: 1px solid grey;*/
+	height:60%;
+	width:60%;
+}
+.service-text{
+	font-weight: 500;
+	text-align:center;
+	margin:10px;
+}
+/*Media-Queries*/
+@media screen and (max-width:520px){
+	.logo{
+	margin-left: 20px;
+
+	}
+	.logo h2{
+		font-size:24px;
+	}
+
+	.service-grid{
+		grid-template-columns: 1fr;
+		padding: 0 10px;
+	}
 }
