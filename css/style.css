@@ -14,6 +14,64 @@ body{
 	background: #1c1c1c;
 	padding: 10px;
 }
+/*Static menu*/
+.static-menu{
+	height:100vh;
+	width:50vw;
+	text-align: center;
+	background: rgba(28,28,28,0.8);
+	position:fixed;
+	right:0;
+	transition: 0.5s;
+    padding-top: 20%;
+}
+.static-ul{
+	list-style: none;
+	font-size: 24px;
+	color: white
+}
+.static-ul li{
+	margin-bottom:30px;
+}
+.static-ul a{
+	text-decoration: none;
+	color: #fff;
+	transition: 0.45s ease-in-out;
+	font-family: Inconsolata , monospace;
+}
+
+/*Menu Icon*/
+.container {
+  display: inline-block;
+  cursor: pointer;
+  margin-right:30px;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
 /* Navigation Bar */
 nav{
 	display: flex;
@@ -58,7 +116,7 @@ nav{
 	font-family: Inconsolata , monospace;
 }
 
-.menu ul li a:hover{
+.menu ul li a:hover , .static-ul li a:hover{
 	color:crimson;
 	font-weight: bold;
 }
@@ -85,7 +143,7 @@ nav{
 	letter-spacing: 5px;
 }
 .sub-heading{
-	font-size:1.2rem;
+	font-size:1.3rem;
 	color: rgba(255,255,255,1 );
 	margin:5px;
 }
@@ -99,22 +157,24 @@ nav{
 	background:crimson;
 	border:none;
 	font-size:18px;
-	font-weight:500;
+	font-weight:600;
 	margin:10px;
 	padding:5px 10px;
 	border-radius:5px;
-	transition:1s ease;
+	transition:0.6s ease;
 }
 
 .btn:hover{
-	filter: brightness(130%);
-	cursor: pointer;
+	/*filter: brightness(130%);
+	cursor: pointer;*/
+	background: #fff;
+	color:#dc143c;
 }
 
  /*Services*/
  #services{
  	/*scroll-behavior: smooth;*/
- 	height:100vh;
+ 	height:75vh;
  	width:100%;
  	padding-top: 10%;
  }
@@ -155,18 +215,36 @@ nav{
 	text-align:center;
 	margin:10px;
 }
+.ser:hover{
+	background: #dc143c;
+	color:#fff;
+}
+.ser:hover .service-heading{
+color: #fff;
+}
+
 /*Media-Queries*/
 @media screen and (max-width:520px){
 	.logo{
-	margin-left: 20px;
+		margin-left: 20px;
 
 	}
 	.logo h2{
-		font-size:24px;
+		font-size:28px;
 	}
 
 	.service-grid{
 		grid-template-columns: 1fr;
 		padding: 0 10px;
+	}
+}
+@media screen and (min-width:700px){
+	.container{
+		display: none;
+	}
+}
+@media screen and (max-width:700px){
+	.menu{
+		display: none;
 	}
 }
