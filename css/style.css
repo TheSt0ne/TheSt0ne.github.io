@@ -8,6 +8,7 @@ html{
 }
 body{
 	font-family: aeriel;
+	background: whitesmoke;
 }
 /*On Scrolled*/
 .toggleBackground{
@@ -155,7 +156,7 @@ nav{
 .btn{
 	color:#fff;
 	background:crimson;
-	border:none;
+	border:1px solid #dc143c;
 	font-size:18px;
 	font-weight:600;
 	margin:10px;
@@ -165,21 +166,19 @@ nav{
 }
 
 .btn:hover{
-	/*filter: brightness(130%);
-	cursor: pointer;*/
+	cursor: pointer;
 	background: #fff;
 	color:#dc143c;
 }
 
  /*Services*/
  #services{
- 	/*scroll-behavior: smooth;*/
- 	height:75vh;
+ 	height:100%;
  	width:100%;
- 	padding-top: 10%;
+ 	padding: 10% 0;
  }
 
-.serve{
+.section-heading{
 	text-align: center;
 	font-family: "Bebas Neue",cursive;
 	font-size: 40px;
@@ -214,6 +213,7 @@ nav{
 	font-weight: 500;
 	text-align:center;
 	margin:10px;
+
 }
 .ser:hover{
 	background: #dc143c;
@@ -222,9 +222,33 @@ nav{
 .ser:hover .service-heading{
 color: #fff;
 }
+/*About us*/
+#about-us{
+	padding: 10% 0;
+	height:75vh;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+#about-us-text{
+	font-size: 1em;
+	margin: 20px;
+}
+.about-us-container{
+	width:60%;
+	height:auto;
+	padding: 5% 10%;
+	background: #fff;
+	box-shadow: 10px 5px 10px rgba(0,0,0,0.5);
+	border:2px solid #dc143c;
+	
+}
 
 /*Media-Queries*/
 @media screen and (max-width:520px){
+	#services{
+		padding-top: 20%;
+	}
 	.logo{
 		margin-left: 20px;
 
@@ -232,18 +256,43 @@ color: #fff;
 	.logo h2{
 		font-size:28px;
 	}
+	.ser{
+		height:400px;
+	}
 
 	.service-grid{
 		grid-template-columns: 1fr;
 		padding: 0 10px;
 	}
+	.service-text{
+		margin:0 5px;
+	}
+	.static-menu{
+		padding-top:25%;
+	}
+	#about-us{
+		padding: 25% 10px;
+	}
+	.about-us-container{
+		width:100%;
+		height:auto;
+		padding:5% 10px;
+	}
+	#about-us-text{
+		margin: 0;
+		font-size:1em;
+	}
 }
-@media screen and (min-width:700px){
+
+@media screen and (min-width:800px){
 	.container{
 		display: none;
 	}
+	.static-menu{
+		display: none;
+	}
 }
-@media screen and (max-width:700px){
+@media screen and (max-width:799px){
 	.menu{
 		display: none;
 	}
