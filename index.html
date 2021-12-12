@@ -1,81 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>My landing page</title>
-	<link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-	<!-- dash-menu -->
-	<div class="static-menu" id="static-menu" hidden>
-		<ul class="static-ul">
-				<li><a href="#home">Home</a></li>
-				<li><a href="#services">Services</a></li>
-				<li><a href="#about-us">About us</a></li>
-				<li><a href="#contact">Contact</a></li>
-		</ul>
-	</div>
-	<!-- Navbar -->
-	<nav id="nav">
-		<div class="logo">
-			<h2 class="logo-text">Aude<span>lia.</span></h2>
-		</div>
-		<div class="menu">
-			<ul>
-				<li><a href="#home">Home</a></li>
-				<li><a href="#services">Services</a></li>
-				<li><a href="#about-us">About us</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-		</div>
-		<div class="container" onclick="myFunction(this)">
-	  		<div class="bar1"></div>
-	  		<div class="bar2"></div>
-	  		<div class="bar3"></div>
-		</div>
-	</nav>
-	<!-- Home Section -->
-	<section id="home">
-		<h1 class="heading">Beautiful Web Designs</h1>
-		<h3 class="sub-heading">Make your webite stand out!</h3>
-		<p class="para">Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Corporis ducimus, aperiam maiores quo!<br>Nisi commodi eveniet natus autem, minus, laborum reprehenderit reiciendis cumque eius optio, modi non pariatur voluptatum aut.</p>
-	    <button class="btn" type="button">Sign Up!</button>
-	</section>
-	<!-- Service Section -->
-	<section id="services">
-		
-		<h2 class="section-heading">Services</h2>
-		
-		<div class="service-grid">
-			<div class="ser">
-				<h2 class="service-heading">Responsive</h2>
-				<img src="./img/responsive.svg" alt="" class="service-image">
-				<p class="service-text">Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Corrupti corporis sequi similique nam Voluptas recusandae facilis placeat minima odit, illum repudiandae,</p>
-			</div>
-			<div class="ser">
-				<h2 class="service-heading">Attractive</h2>
-				<img src="./img/attractive.svg" alt="" class="service-image">
-				<p class="service-text">Ducimus cupiditate eaque quis mollitia ut praesentium quo atque id, veniam minima quam, voluptatibus omnis aperiam?</p>
-			</div>
-			<div class="ser">
-				<h2 class="service-heading">Dynamic</h2>
-				<img src="./img/dynamic.svg" alt="" class="service-image">
-				<p class="service-text">Deserunt a alias rem soluta omnis eos aperiam est veritatis porro impedit cumque saepe in eum illum, odio praesentium id laboriosam, ad.</p>
-			</div>
-		</div>
 
-	</section>
-	<section id="about-us">
-		<div class="about-us-container">
-		<h2 class="section-heading">About Us</h2>
-		
-		<p id="about-us-text">Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Voluptatem iure dicta repellat molestiae harum labore, ipsum rerum quod soluta debitis, fugit doloribus quisquam nulla, dignissimos, enim esse doloremque. Ducimus Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Aut veniam inventore, reiciendis, commodi qui voluptate asperiores nam est necessitatibus quod nostrum iusto adipisci velit eaque esse quas, corporis molestias, pariatur!Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		id est laborum.
-		</p>
-		<button class="btn" type="button">Know more</button>
-		</div>
-	</section>
-	<script src="./js/script.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My landing page</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- dash-menu -->
+    <div class="static-menu" id="static-menu" hidden>
+        <ul class="static-ul">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about-us">About us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    <!-- Navbar -->
+    <nav id="nav">
+        <div class="logo">
+            <h2 class="logo-text">Aude<span>lia.</span></h2>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about-us">About us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </nav>
+    <!-- Home Section -->
+    <section id="home">
+        <h1 class="heading">Beautiful Web Designs</h1>
+        <h3 class="sub-heading">Make your webite stand out!</h3>
+        <p class="para">Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Corporis ducimus, aperiam maiores quo!<br>Nisi commodi eveniet natus autem, minus, laborum reprehenderit reiciendis cumque eius optio, modi non pariatur voluptatum aut.</p>
+        <button class="btn" type="button">Sign Up!</button>
+    </section>
+    <!-- Service Section -->
+    <section id="services">
+
+        <h2 class="section-heading">Services</h2>
+
+        <div class="service-grid">
+            <div class="ser">
+                <h2 class="service-heading">Responsive</h2>
+                <img src="./img/responsive.svg" alt="" class="service-image">
+                <p class="service-text">Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Corrupti corporis sequi similique nam Voluptas recusandae facilis placeat minima odit, illum repudiandae,</p>
+            </div>
+            <div class="ser">
+                <h2 class="service-heading">Attractive</h2>
+                <img src="./img/attractive.svg" alt="" class="service-image">
+                <p class="service-text">Ducimus cupiditate eaque quis mollitia ut praesentium quo atque id, veniam minima quam, voluptatibus omnis aperiam?</p>
+            </div>
+            <div class="ser">
+                <h2 class="service-heading">Dynamic</h2>
+                <img src="./img/dynamic.svg" alt="" class="service-image">
+                <p class="service-text">Deserunt a alias rem soluta omnis eos aperiam est veritatis porro impedit cumque saepe in eum illum, odio praesentium id laboriosam, ad.</p>
+            </div>
+        </div>
+
+    </section>
+    <section id="about-us">
+        <div class="about-us-container">
+            <h2 class="section-heading">About Us</h2>
+
+            <p id="about-us-text">Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Voluptatem iure dicta repellat molestiae harum labore, ipsum rerum quod soluta debitis, fugit doloribus quisquam nulla, dignissimos, enim esse doloremque. Ducimus Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Aut veniam inventore, reiciendis, commodi qui voluptate asperiores nam est necessitatibus quod nostrum iusto adipisci velit eaque esse quas, corporis molestias, pariatur!Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                id est laborum.
+            </p>
+            <button class="btn" type="button">Know more</button>
+        </div>
+    </section>
+    <section id="contact">
+        <h2 class="section-heading" id="contact-heading">Contact us!</h2>
+        <div id="contact-div">
+            <form action="">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" class="input-box"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" class="input-box"><br>
+                <label for="message">Message:</label><br>
+                <textarea type="text" id="message" name="message" class="input-box"></textarea><br>
+                <input type="submit" value="Send" id="send-btn">
+            </form>
+            <div class="icons">
+            	<a href="#"><i class="fab fa-twitter"></i></a>
+            	<a href="#"><i class="fab fa-github"></i></a>
+            	<a href="#"> <i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+      
+    </section>
+    <footer>
+    	<p>Copyright <i class="fa fa-copyright"></i> Audelia Web Designs</p>
+    </footer>
+    <script src="./js/script.js"></script>
 </body>
+
 </html>

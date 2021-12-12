@@ -1,14 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inconsolata&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inconsolata&family=Roboto+Condenced&family=Oswald&display=swap');
 *{
 	margin: 0;
 	padding: 0;
+	/*outline: 1px solid red !important;*/
+	/*background: black !important;*/
+	/*color: cyan !important;*/
 }
 html{
 	scroll-behavior: smooth;
 }
 body{
-	font-family: aeriel;
+	font-family: "Roboto Condenced",sans-serif;
 	background: whitesmoke;
+	font-size: 14px;
 }
 /*On Scrolled*/
 .toggleBackground{
@@ -241,9 +245,80 @@ color: #fff;
 	background: #fff;
 	box-shadow: 10px 5px 10px rgba(0,0,0,0.5);
 	border:2px solid #dc143c;
-	
 }
+/*Contacts*/
+#contact{
+	height: 75vh;
+	padding-top:10%;
+	background: #dc143c;
+}
+#contact-div{
+	/*width:50%;*/
+	margin:20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: #fff;
+    font-size: 16px;
+}
+#contact-heading{
+	color:#fff;
+	letter-spacing: 5px;
+}
+.input-box{
+	box-shadow: 1px 2px 2px 1px rgba(0,0,0,0.7);
+	border:none;
+	border-radius: 5px;
+	padding:4px;
+    margin: 2px 0 10px 0;
+	}
+#message{
+	height: 70px;
+	width: 300px;
+	resize: none;
+}
+#send-btn{
+	background: #fff;
+    padding: 5px 10px;
+    font-size: 14px;
+    border: 1px solid #1c1c1c;
+    border-radius: 10px;
+    box-shadow:  1px 2px 2px 1px rgba(0,0,0,0.7);
+}
+#send-btn:hover{
+    cursor: pointer;
+    color: #fff;
+    background: #1c1c1c;
+    box-shadow: none;
+}
+.icons{
+	width:308px;
+	text-align: left;
+}
+.fab{
+	font-size: 1.7rem;
+	text-decoration: none;
+	color:#fff;
+	margin: 20px;
 
+}
+.fa-twitter:hover{
+	color:#00acee;
+}
+.fa-github:hover{
+	color:#1c1c1c;
+}
+.fa-whatsapp:hover{
+	color:lightgreen;
+}
+/*Footer*/
+footer{
+	background: #1c1c1c;
+	color: #fff;
+	padding:20px;
+	text-align: center;
+}
 /*Media-Queries*/
 @media screen and (max-width:520px){
 	#services{
@@ -255,7 +330,7 @@ color: #fff;
 	}
 	.logo h2{
 		font-size:28px;
-	}
+	}+
 	.ser{
 		height:400px;
 	}
@@ -281,6 +356,15 @@ color: #fff;
 	#about-us-text{
 		margin: 0;
 		font-size:1em;
+	}
+	#contact{
+		height:80vh;
+	}
+	#message{
+		width: 230px;
+	}
+	.icons{
+	width:238px;
 	}
 }
 
